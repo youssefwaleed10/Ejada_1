@@ -21,14 +21,12 @@ img {
   height: auto;
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto;
 }
 
-/* Header */
 header, .header {
   display: flex;
   justify-content: space-between;
@@ -61,36 +59,28 @@ header, .header {
   font-weight: 600;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  position: absolute;  /* take it out of normal flow */
-  right: 20px;         /* space from the right edge */
-  top: 20px;           /* space from the top */
-  z-index: 999;        /* stay above the menu */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 999;
 }
 
 .menu-icon {
   width: 24px;
   height: 124px;
+  display: block;
 }
 
 .close-icon {
   width: 24px;
   height: 24px;
-}
-
-/* Default: show menu icon, hide close icon */
-.menu-icon {
-  display: block;
-}
-.close-icon {
   display: none;
 }
 
-/* When active: hide menu icon, show close icon */
 .hamburger.active .menu-icon {
   display: none;
 }
@@ -98,7 +88,6 @@ header, .header {
   display: block;
 }
 
-/* Show hamburger only on small screens */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -106,8 +95,6 @@ header, .header {
   }
 }
 
-
-/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
@@ -138,7 +125,6 @@ header, .header {
   font-weight: bold;
 }
 
-/* Clients Section */
 .clients {
   padding: 40px 0;
   text-align: center;
@@ -155,7 +141,7 @@ header, .header {
 
 .clients-logos {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
@@ -176,7 +162,6 @@ header, .header {
   filter: grayscale(0%);
 }
 
-/* Features Section */
 .features {
   padding: 60px 0;
   text-align: center;
@@ -210,7 +195,6 @@ header, .header {
   text-align: center;
 }
 
-/* Testimonial Section */
 .testimonial-section {
   display: flex;
   align-items: center;
@@ -238,7 +222,6 @@ header, .header {
   font-weight: bold;
 }
 
-/* Stats Section */
 .stats {
   background-color: #F5F7FA;
   padding: 40px 0;
@@ -261,7 +244,6 @@ header, .header {
   color: #717171;
 }
 
-/* Blog Section */
 .blog-section {
   padding: 60px 0;
   background-color: #F5F7FA;
@@ -295,7 +277,6 @@ header, .header {
   color: #717171;
 }
 
-/* Footer */
 footer {
   background-color: #263238;
   color: #fff;
@@ -338,7 +319,6 @@ footer {
   color: #F5F7FA;
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .hero,
   .testimonial-section {
