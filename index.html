@@ -9,12 +9,11 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="container">
+  <header class="container header">
     <div class="logo">
-      <img src="images/logo.svg" alt="Nexcent Logo"/>
+      <img src="images/logo.svg" alt="Nexcent Logo" />
     </div>
-    <nav>
+    <nav class="nav-links" id="navLinks">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Features</a></li>
@@ -24,9 +23,13 @@
         <li><a href="#" class="nav-cta">Register Now</a></li>
       </ul>
     </nav>
+    <!-- Hamburger menu with default ☰ and hidden ✕ -->
+    <div class="hamburger" id="hamburger">
+      <span class="menu-icon">☰</span>
+      <span class="close-icon">✕</span>
+    </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero container">
     <div class="hero-text">
       <h1>Lessons and insights <br><span>from 8 years</span></h1>
@@ -38,7 +41,6 @@
     </div>
   </section>
 
-  <!-- Clients -->
   <section class="clients container">
     <h2>Our Clients</h2>
     <p>We have been working with some Fortune 500+ clients</p>
@@ -52,7 +54,6 @@
     </div>
   </section>
 
-  <!-- Features -->
   <section class="features container">
     <h2>Manage your entire community in a single system</h2>
     <p>Who is Nextcent suitable for?</p>
@@ -75,7 +76,6 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
   <section class="testimonial-section container">
     <div class="testimonial-image">
       <img src="images/testimonial.svg" alt="Testimonial Illustration">
@@ -87,7 +87,6 @@
     </div>
   </section>
 
-  <!-- Stats -->
   <section class="stats">
     <div class="stat">
       <h3>2,245,341</h3>
@@ -107,7 +106,6 @@
     </div>
   </section>
 
-  <!-- Blog / News -->
   <section class="blog-section">
     <h2>Caring is the new marketing</h2>
     <p>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
@@ -127,7 +125,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container footer-top">
       <div class="footer-section">
@@ -155,6 +152,16 @@
       &copy; 2025 Nexcent. All rights reserved.
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+  
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
